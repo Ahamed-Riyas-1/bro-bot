@@ -90,7 +90,7 @@ async function handlePriceAlert(currentPrice, previousPrice) {
 
     const priceDifference = Math.abs(previousPrice - currentPrice);
 
-    if (priceDifference > 50) {
+    if (priceDifference > 80) {
         const status = currentPrice < previousPrice ? 'dropped' : 'raised';
         const message = `BRO price ${status} from ${previousPrice} KDA to ${currentPrice} KDA`;
 
